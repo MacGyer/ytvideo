@@ -37,7 +37,8 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_module']['ytvideo']     	  = array('Youtube-Video', 'Wählen Sie hier das anzuzeigende Video aus.');
+$GLOBALS['TL_LANG']['tl_module']['ytvideo'][0]          = 'Youtube-Video';
+$GLOBALS['TL_LANG']['tl_module']['ytvideo'][1]     	= 'Wählen Sie hier das anzuzeigende Video aus.';
 
 
 ?>

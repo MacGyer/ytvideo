@@ -35,7 +35,7 @@
 $GLOBALS['BE_MOD']['content']['ytvideo'] = array
 (
 	'tables' => array('tl_ytvideo'),
-	'icon'   => 'system/modules/ytvideo/html/icon.gif'
+	'icon'   => 'system/modules/ytvideo/assets/images/icon.gif'
 );
 
 

@@ -32,12 +32,14 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD']['ytvideo'] 	= array('Youtube', 'Youtube-Videos für die Einbindung in die Seite verwalten und konfigurieren.');
+$GLOBALS['TL_LANG']['MOD']['ytvideo'][0] 	= 'Youtube';
+$GLOBALS['TL_LANG']['MOD']['ytvideo'][1] 	= 'Youtube-Videos für die Einbindung in die Seite verwalten und konfigurieren.';
 
 
 /**
  * Front end modules
  */
-$GLOBALS['TL_LANG']['FMD']['ytvideo'] 	= array('Youtube-Video', 'Bindet ein Youtube-Video als Modul ein.');
+$GLOBALS['TL_LANG']['FMD']['ytvideo'][0] 	= 'Youtube-Video';
+$GLOBALS['TL_LANG']['FMD']['ytvideo'][1] 	= 'Bindet ein Youtube-Video als Modul ein.';
 
 ?>

@@ -32,11 +32,8 @@
  /**
  * Content Elements
  */
-$GLOBALS['TL_LANG']['CTE']['videos'] 	= 'Video-Elemente';
-$GLOBALS['TL_LANG']['CTE']['ytvideo'] 	= array('Youtube-Video', 'Bindet ein Youtube-Video als Inhaltselement ein.');
+$GLOBALS['TL_LANG']['CTE']['videos']            = 'Video-Elemente';
+$GLOBALS['TL_LANG']['CTE']['ytvideo'][0]        = 'Youtube-Video';
+$GLOBALS['TL_LANG']['CTE']['ytvideo'][1] 	= 'Bindet ein Youtube-Video als Inhaltselement ein.';
 
-/**
- * Miscellaneous
- */
-$GLOBALS['TL_LANG']['MSC'][''] = '';
 ?>

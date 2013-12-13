@@ -28,22 +28,20 @@
  * @filesource
  */
 
-
 /**
- * Table tl_ytvideo
+ * Table tl_module
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['ytvideo']    = '{title_legend},name,headline,type;{video_legend},ytvideo;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['ytvideo'] = '{title_legend},name,headline,type;{video_legend},ytvideo;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['ytvideo'] = array(
-	'label'			=> &$GLOBALS['TL_LANG']['tl_module']['ytvideo'],
-	'inputType'		=> 'select',
-	'eval'			=> array(
-							'mandatory' 			=> true,
-							'includeBlankOption' 	=> true,
-							'chosen' 				=> true
-						),
-	'foreignKey'	=> 'tl_ytvideo.title'
-
+    'label' => &$GLOBALS['TL_LANG']['tl_module']['ytvideo'],
+    'inputType' => 'select',
+    'eval' => array(
+        'mandatory' => true,
+        'includeBlankOption' => true,
+        'chosen' => true
+    ),
+    'foreignKey' => 'tl_ytvideo.title',
+    'sql' => "int(10) unsigned NOT NULL default '0'"
 );
-
 ?>

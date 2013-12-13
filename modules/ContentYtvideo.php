@@ -28,42 +28,69 @@
  * @filesource
  */
 
-
 /**
- * Class ModuleYtvideo
+ * Class ContentYtvideo
  *
- * Front end module "ytvideo".
+ * Front end content element "ytvideo".
  * @copyright  pluspunkt coding 2012
  * @author     pluspunkt coding <http://www.pluspunkt-coding.de>
  * @package    Controller
  */
-class ModuleYtvideo extends Module
+class ContentYtvideo extends ContentElement
 {
 
 	/**
 	 * Template
 	 * @var string
 	 */
-	protected $strTemplate = 'mod_ytvideo';
+	protected $strTemplate = 'ce_ytvideo';
+
+	/**
+	 * Video object
+	 * @var Database_Result
+	 */
+	protected $objVideo;
 
 
 	/**
-	 * generate the module
+	 * Get all Videos from Database
 	 * @return string
 	 */
 	public function generate()
 	{
+		
+		if (TL_MODE == 'BE')
+		{
+			$objTemplate = new BackendTemplate('be_wildcard');
+						
+			$objVideo = Database::getInstance()
+						->prepare('
+							SELECT * FROM tl_ytvideo WHERE id = ?
+						')
+						->execute($this->ytvideo);
+			
+			$arrVideo = $objVideo->fetchAssoc();
+			
+			$objTemplate->wildcard = '### YOUTUBE VIDEO ###';
+			$objTemplate->title = $this->headline;
+			$objTemplate->id = $this->ytvideo;
+			$objTemplate->link = $arrVideo['title'];
+			$objTemplate->href = 'contao/main.php?do=ytvideo&amp;act=edit&amp;id=' . $this->ytvideo;
+            
+			return $objTemplate->parse();
+		}
+				
 		return parent::generate();
 	}
 
 
 	/**
-	 * Generate the module
+	 * Generate the content element
 	 */
 	protected function compile()
 	{
 		$time = time();
-		
+        
 		$objVideo = Database::getInstance()
 					->prepare(
 						'SELECT *

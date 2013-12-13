@@ -28,16 +28,15 @@
  * @filesource
  */
 
- 
-/**
- * Fields
- */
-$GLOBALS['TL_LANG']['tl_content']['ytvideo'] 		= array('Youtube-Video', 'Wählen Sie hier das anzuzeigende Video aus.');
-
 /**
  * Legends
  */
 $GLOBALS['TL_LANG']['tl_content']['video_legend'] 	= 'Video-Auswahl';
 
+/**
+ * Fields
+ */
+$GLOBALS['TL_LANG']['tl_content']['ytvideo'][0]		= 'Youtube-Video';
+$GLOBALS['TL_LANG']['tl_content']['ytvideo'][1]		= 'Wählen Sie hier das anzuzeigende Video aus.';
 
 ?>
