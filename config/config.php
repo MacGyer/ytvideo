@@ -56,6 +56,7 @@ $GLOBALS['TL_CTE']['videos'] = array
 /**
  * Register hooks
  */
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('Ytvideo', 'generateInserttag');
 
 
 /**

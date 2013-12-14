@@ -16,6 +16,9 @@
  */
 ClassLoader::addClasses(array
 (
+	// Classes
+	'Ytvideo'        => 'system/modules/ytvideo/classes/Ytvideo.php',
+
 	// Modules
 	'ContentYtvideo' => 'system/modules/ytvideo/modules/ContentYtvideo.php',
 	'ModuleYtvideo'  => 'system/modules/ytvideo/modules/ModuleYtvideo.php',
