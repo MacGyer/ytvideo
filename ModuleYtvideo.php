@@ -80,10 +80,10 @@ class ModuleYtvideo extends Module
 		$this->Template->ytvideo_data = $arrVideo;
 		if($arrVideo['reloop'])
                 {
-                    $this->Template->ytvideo_options = 'playlist='.$arrVideo['videoId'].'&amp;autoplay='.$arrVideo['autoplay'].'&amp;autohide='.$arrVideo['autohide'].'&amp;controls='.$arrVideo['controls'].'&amp;loop='.$arrVideo['reloop'].'&amp;rel='.$arrVideo['rel'].'&amp;color='.$arrVideo['color'].'&amp;theme='.$arrVideo['theme'].'&amp;showinfo='.$arrVideo['showinfo'];
+                    $this->Template->ytvideo_options = 'playlist='.$arrVideo['videoId'].'&amp;autoplay='.$arrVideo['autoplay'].'&amp;autohide='.$arrVideo['autohide'].'&amp;controls='.$arrVideo['controls'].'&amp;loop='.$arrVideo['reloop'].'&amp;rel='.$arrVideo['rel'].'&amp;color='.$arrVideo['color'].'&amp;theme='.$arrVideo['theme'].'&amp;showinfo='.$arrVideo['showinfo'].'&amp;wmode=transparent';
                 }
                 else{
-                    $this->Template->ytvideo_options = 'autoplay='.$arrVideo['autoplay'].'&amp;autohide='.$arrVideo['autohide'].'&amp;controls='.$arrVideo['controls'].'&amp;loop='.$arrVideo['reloop'].'&amp;rel='.$arrVideo['rel'].'&amp;color='.$arrVideo['color'].'&amp;theme='.$arrVideo['theme'].'&amp;showinfo='.$arrVideo['showinfo'];
+                    $this->Template->ytvideo_options = 'autoplay='.$arrVideo['autoplay'].'&amp;autohide='.$arrVideo['autohide'].'&amp;controls='.$arrVideo['controls'].'&amp;loop='.$arrVideo['reloop'].'&amp;rel='.$arrVideo['rel'].'&amp;color='.$arrVideo['color'].'&amp;theme='.$arrVideo['theme'].'&amp;showinfo='.$arrVideo['showinfo'].'&amp;wmode=transparent';
                 }
                 
 	}
