@@ -9,6 +9,6 @@
 	</div>
 	<?php endif; ?>
 
-	<iframe width="<?php echo $this->ytvideo_data['width']; ?>" height="<?php echo $this->ytvideo_data['height']; ?>" src="http://www.youtube.com/embed/<?php echo $this->ytvideo_data['videoId']; ?>?<?php echo $this->ytvideo_options; ?>"></iframe>
+	<iframe width="<?php echo $this->ytvideo_data['width']; ?>" height="<?php echo $this->ytvideo_data['height']; ?>" src="//www.youtube.com/embed/<?php echo $this->ytvideo_data['videoId']; ?>?<?php echo $this->ytvideo_options; ?>"></iframe>
 
 </div>
